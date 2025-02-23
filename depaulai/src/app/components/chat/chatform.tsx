@@ -1,8 +1,5 @@
 "use client";
-import React from 'react';
-import { useState } from 'react';
-
-
+import React, { useState } from 'react';
 
 const ChatForm = ({
     onSendMessage,
@@ -10,21 +7,29 @@ const ChatForm = ({
     onSendMessage: (message: string) => void;
 }) => {
     const [message, setMessage] = useState("");
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if(message.trim() !== ""){
+        if (message.trim() !== "") {
             onSendMessage(message);
-        setMessage("");
+            setMessage("");
         }
     };
+
     return (
-        <form onSubmit={handleSubmit} className="flex gap-2 mt-4">
-            <input 
-            onChange={(e) => setMessage(e.target.value)}
-            type="text" className="flex-1" 
-            placeholder="Type your message here..." 
+        <form onSubmit={handleSubmit} className="flex gap-2 mt-4 w-[80%] h-[75px]">
+            <input
+                onChange={(e) => setMessage(e.target.value)}
+                type="text"
+                className="bg-black text-white w-[100%] py-2 px-4 rounded"
+                placeholder="Type your message here..."
             />
-            <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send</button>
+            <button
+                type="submit"
+                className="bg-white-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
+                Send
+            </button>
         </form>
     );
 };
