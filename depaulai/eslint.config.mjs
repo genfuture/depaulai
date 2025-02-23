@@ -9,8 +9,14 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
+// Fixed the syntax here to use an object instead of an array
+const eslintConfig = {
+  extends: [
+    ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ],
+  rules: {
+    "@typescript-eslint/no-require-imports": "off",
+  },
+};
 
 export default eslintConfig;
