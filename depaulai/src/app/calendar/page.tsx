@@ -1,9 +1,13 @@
 "use client";
 import React from 'react';
-import Calendarsec from './calendarsec';
+import Calendarsec from './calendarsec';import dynamic from 'next/dynamic';
+
+
 
 
 export default function calendar() {
+    const FullCalendarComponent = dynamic(() => import('./calendarsec'), { ssr: false });
+
 
     return (
         <>

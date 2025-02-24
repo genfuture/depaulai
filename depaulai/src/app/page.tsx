@@ -2,6 +2,8 @@
 import ChatForm from "./components/chat/chatform";
 import { useState } from "react";
 import Messages from "./components/chat/messages";
+/*import '@fullcalendar/core/main.css';  // Import Core styles
+import '@fullcalendar/daygrid/main.css';*/ // Import DayGrid styles
 
 export default function Home() {
   const [messages, setMessages] = useState<
