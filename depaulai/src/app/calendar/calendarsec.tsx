@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import listPlugin from '@fullcalendar/list';
-
 
 const CalendarSec = () => {
   const calendarRef = useRef(null);  // Ref for the calendar div
@@ -11,7 +9,10 @@ const CalendarSec = () => {
   useEffect(() => {
     if (calendarRef.current) {
       calendarInstance = new Calendar(calendarRef.current, {
-        plugins: [listPlugin, dayGridPlugin],
+        plugins: [dayGridPlugin],
+        contentHeight: 'auto',
+        height: '100%',
+        fixedWeekCount: false,
       });
 
       calendarInstance.render();
@@ -27,7 +28,8 @@ const CalendarSec = () => {
 
   return (
     <div>
-      <div ref={calendarRef}/>  
+      <div ref={calendarRef} style={{ height: '700px', width: '100%' }} />
+      
     </div>
   );
 };

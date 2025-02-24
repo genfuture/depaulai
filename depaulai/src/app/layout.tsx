@@ -30,7 +30,7 @@ export default function RootLayout({
       >
             <Navbar />
             <main>{children}</main>
-            <footer>Footer</footer>
+            <footer>DepaulAi Team | 2025 PROpel Hackathon</footer>
       </body>
     </html>
   );

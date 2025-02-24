@@ -7,10 +7,8 @@ export default function calendar() {
 
     return (
         <>
-        <div className="justify-center items-center flex flex-col">
-            <div className="w-[100%] h-[1000px] overflow-y-auto p-4">
+        <div className="items-center flex flex-col p-5">
             <Calendarsec />
-            </div>
         </div>
             </>
     )

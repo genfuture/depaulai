@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import ChatForm from "./components/chat/chatform";
 import { useState } from "react";
 import Messages from "./components/chat/messages";
@@ -13,7 +12,7 @@ export default function Home() {
   };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <div className="h-[1000px] w-[80%] overflow-y-auto p-4 bg-gray-900 border-2 border-black">
+      <div className="w-[80%] overflow-y-auto p-4 bg-gray-900 border-2 border-black">
         {messages.map((msg, index) => (
           <Messages
             key={index}

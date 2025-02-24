@@ -33,3 +33,28 @@ body {
 .navbg{
   background-color: white;
 }
+
+/* FullCalendar: Target day grid cells (the date boxes) */
+.fc-daygrid-day {
+  width: 200px; /* Adjust this to widen the boxes */
+  height: 200px;
+}
+
+/* Optional: Adjust font size inside the day boxes (the date numbers) */
+.fc-daygrid-day-number {
+  font-size: 1.2rem;  /* Adjust font size for better readability */
+}
+
+/* Optional: Adjust header (day names like Mon, Tue, etc.) */
+.fc-col-header-cell {
+  font-size: 1.2rem;  /* Adjust the header font size */
+}
+
+/* Optional: Adjust the day box spacing, if necessary */
+.fc-daygrid-day-frame {
+  padding: 1.2rem; /* Adjust padding between the content and the border */
+}
+
+.fc-daygrid-day-frame:hover {
+  background-color: grey; /* Adjust the hover background color */
+}
