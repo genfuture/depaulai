@@ -6,7 +6,7 @@ import re
 import dateparser  # For handling flexible date inputs
 
 # Set the path to your .ics file
-calendar_path = "/Users/navikamaglani/Downloads/DePaulUniversityEvents.ics"
+calendar_path = "DePaulUniversityEvents.ics"
 
 if not os.path.exists(calendar_path):
     print(f"\n❌ Oops! The calendar file '{calendar_path}' was not found. Please check the file path and try again.")

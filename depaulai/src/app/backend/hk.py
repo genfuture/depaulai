@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import re
 
 # Set the path to your .ics file
-calendar_path = "/Users/navikamaglani/Downloads/DePaulUniversityEvents.ics"
+calendar_path = "DePaulUniversityEvents.ics"
 
 # Load and parse the calendar file
 if not os.path.exists(calendar_path):

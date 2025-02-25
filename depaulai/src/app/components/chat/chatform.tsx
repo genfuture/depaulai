@@ -8,11 +8,30 @@ const ChatForm = ({
 }) => {
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (message.trim() !== "") {
-            onSendMessage(message);
-            setMessage("");
+            try {
+                // Send the message to the Flask backend using fetch
+                const response = await fetch('http://localhost:5328/backend/hack?query=some_query_value' + encodeURIComponent(message), {
+                    method: 'GET', // Change to 'POST' if the backend expects POST
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                // Check if the response is successful
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log("Message sent successfully:", data);
+                    onSendMessage(message);  // Call the onSendMessage function passed as a prop
+                    setMessage(""); // Clear the input field
+                } else {
+                    console.error("Error sending message:", response.statusText);
+                }
+            } catch (error) {
+                console.error("Error in fetch:", error);
+            }
         }
     };
 
@@ -23,6 +42,7 @@ const ChatForm = ({
                 type="text"
                 className="bg-black text-white w-[100%] py-2 px-4 rounded"
                 placeholder="Type your message here..."
+                value={message}
             />
             <button
                 type="submit"
