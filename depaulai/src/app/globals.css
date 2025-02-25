@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,7 +23,7 @@ body {
 }
 
 .navbar {
-  color: #0a0a0a;
+  color: white;
   font-size: 2.5cap;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-right: 5cap;
@@ -31,7 +33,7 @@ body {
 }
 
 .navbg{
-  background-color: white;
+  background-color: #0057B7;
 }
 
 /* FullCalendar: Target day grid cells (the date boxes) */
@@ -57,4 +59,54 @@ body {
 
 .fc-daygrid-day-frame:hover {
   background-color: grey; /* Adjust the hover background color */
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #34495e;
 }
