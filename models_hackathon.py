@@ -46,7 +46,8 @@ for component in cal.walk():
 # tinyLLaMA tokenizer and model
 model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name, ignore_mismatched_sizes=True)
+
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
