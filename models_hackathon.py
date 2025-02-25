@@ -103,7 +103,3 @@ def chatbot(input_text):
         print(f"Error: {e}")
         return "Sorry, I can't answer that right now."
 
-# Example usage:
-if __name__ == "__main__":
-    user_input = "Are there any events in Lincoln Park campus?"
-    print(chatbot(user_input))
