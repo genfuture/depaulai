@@ -52,7 +52,7 @@ const ChatForm = ({ onSendMessage }: { onSendMessage: (message: string) => void 
                 <input
                     onChange={(e) => setMessage(e.target.value)}
                     type="text"
-                    className="bg-black text-white w-[100%] py-2 px-4 rounded"
+                    className="w-[100%] py-2 px-4 rounded"
                     placeholder="Type your message here..."
                     value={message}
                 />

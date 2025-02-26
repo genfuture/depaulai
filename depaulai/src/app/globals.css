@@ -2,57 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* Default colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bg-color: var(--background);
+  --text-color: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Light theme variables */
+/* Light theme */
+[data-theme="light"] {
+  --bg-color: white;    /* Light background color for the body */
+  --text-color: black;  /* Light text color */
+  --background: #ffffff; /* Body background color */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: black;    /* Dark background color for the body */
+  --text-color: white;  /* Dark text color */
+  --background: #0a0a0a; /* Body background color */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background); /* Dynamically apply background color */
+  color: var(--text-color); /* Dynamically apply text color */
 }
 
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Optionally, customize button and other footer elements based on theme */
+footer button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+/* Button Styles for Theme Toggle */
+#theme-toggle-button {
+  background-color: #0057B7;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+/* Navbar Styles */
 .navbar {
   color: white;
-  font-size: 2.5cap;
+  font-size: 2.5rem; /* Adjusted for readability */
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-right: 5cap;
-  margin-left: 2cap;
-  padding: 1cap;
-
+  margin-right: 5rem;
+  margin-left: 2rem;
+  padding: 1rem;
 }
 
-.navbg{
+/* Navbar Background */
+.navbg {
   background-color: #0057B7;
 }
 
-/* FullCalendar: Target day grid cells (the date boxes) */
+/* FullCalendar Adjustments */
 .fc-daygrid-day {
   width: 200px; /* Adjust this to widen the boxes */
   height: 200px;
 }
 
-/* Optional: Adjust font size inside the day boxes (the date numbers) */
+/* Adjust font size inside the day boxes */
 .fc-daygrid-day-number {
   font-size: 1.2rem;  /* Adjust font size for better readability */
 }
 
-/* Optional: Adjust header (day names like Mon, Tue, etc.) */
+/* Adjust header (day names like Mon, Tue, etc.) */
 .fc-col-header-cell {
   font-size: 1.2rem;  /* Adjust the header font size */
 }
 
-/* Optional: Adjust the day box spacing, if necessary */
+/* Adjust day box spacing */
 .fc-daygrid-day-frame {
   padding: 1.2rem; /* Adjust padding between the content and the border */
 }
@@ -61,6 +90,7 @@ body {
   background-color: grey; /* Adjust the hover background color */
 }
 
+/* Sidebar Styles */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -95,6 +125,7 @@ body {
   background-color: #34495e;
 }
 
+/* Sidebar Toggle Button */
 .toggle-btn {
   position: absolute;
   top: 20px;

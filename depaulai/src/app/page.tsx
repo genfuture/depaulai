@@ -2,6 +2,7 @@
 import ChatForm from "./components/chat/chatform";
 import { useState } from "react";
 import Messages from "./components/chat/messages";
+import RootLayout from './components/root-layout';
 
 export default function Home() {
   const [messages, setMessages] = useState<{ sender: string, message: string }[]>([]);
@@ -12,6 +13,7 @@ export default function Home() {
   };
 
   return (
+    <RootLayout>
     <main className='relative h-full w-full flex flex-col'>
       <div className="flex-1 max-h-[75vh] overflow-y-auto">
         {messages.map((msg, index) => (
@@ -25,5 +27,6 @@ export default function Home() {
       <ChatForm onSendMessage={handleSendMessage} />
       </div>
     </main>
+    </RootLayout>
   );
 }
