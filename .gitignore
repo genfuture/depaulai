@@ -1,3 +1,8 @@
 /results
 /__pycache__
-/datadata/chroma_db/chroma.sqlite3
+/data/*
+/fine_tuned_model
+/scraper
+test_installation.py
+run.py
+/data
