@@ -2,7 +2,9 @@
 /__pycache__
 /data/*
 /fine_tuned_model
-/scraper
+scraper/*
 test_installation.py
 run.py
 /data
+/scraper
+/scraper/depaul_chatbot
