@@ -50,6 +50,9 @@ footer button {
   margin-right: 5px;
 }
 
+.flex-1 {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 /* Navbar Styles */
 .navbar {
   color: white;
