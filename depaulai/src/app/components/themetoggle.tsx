@@ -1,4 +1,4 @@
-// src/app/components/themetoggle.tsx (Client-side component)
+
 
 'use client'; // This ensures that the component is client-side only
 
