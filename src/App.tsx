@@ -140,9 +140,11 @@ function App() {
 
   /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two campuses, one in Lincoln Park and the other in the Loop\. It is the largest Catholic university in the U\.S\. in terms of enrollment\.\s*/,
 
+  /^DePaul University is a private Catholic research university in Chicago, Illinois\. It was founded in 1898 by the Vincentians and named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two main campuses: one in Lincoln Park and another in the Loop\. The university is the largest Catholic university in North America by enrollment\.\s*/,
+
   // New introductory phrase added
-  /^DePaul University is a private Catholic research university in Chicago, Illinois\. It was founded in 1898 by the Vincentians and named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two main campuses: one in Lincoln Park and another in the Loop\. The university is the largest Catholic university in North America by enrollment\.\s*/
-  ];
+  /^DePaul University is a private Catholic research university located in Chicago, Illinois\. Founded in 1898, it's one of the largest Catholic universities in the U\.S\.\s*/
+];
     
     let cleanedResponse = response;
     
