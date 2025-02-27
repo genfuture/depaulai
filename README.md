@@ -12,7 +12,7 @@ The Academic Calendar Branch focuses on:
   Optimizing accuracy through data cleaning, tokenization, and fine-tuning.  
 
 🛠 Tech Stack  
-  Backend**: Python (Flask/FastAPI)  
+  Backend: Python (Flask/FastAPI)  
   Model Training: Transformers, NLP techniques    
 
 📌 How to Use  
