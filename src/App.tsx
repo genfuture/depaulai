@@ -135,7 +135,11 @@ function App() {
     // Common introductory phrases to remove
     const introPatterns = [
       /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded in 1898\.\s*/,
-      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul is the largest Catholic university in the U\.S\. by enrollment\. The university has two campuses located in Lincoln Park and the Loop\. DePaul is classified among "R2: Doctoral Universities – High research activity"\. The acceptance rate is 70%\.\s*/
+      
+      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul is the largest Catholic university in the U\.S\. by enrollment\. The university has two campuses located in Lincoln Park and the Loop\. DePaul is classified among "R2: Doctoral Universities – High research activity"\. The acceptance rate is 70%\.\s*/,
+
+      // New introductory phrase added
+      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two campuses, one in Lincoln Park and the other in the Loop\. It is the largest Catholic university in the U\.S\. in terms of enrollment\.\s*/
     ];
     
     let cleanedResponse = response;
