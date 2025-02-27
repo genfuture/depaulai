@@ -24,7 +24,8 @@ This project extracts event data from the DePaul Events iCalendar (.ics) URL, pr
    pip install requests icalendar transformers datasets torch sumy
    
 ## Configuration
-The config.json file stores the trained model configuration, including the model path and hyperparameters for fine-tuning.
+The config.json file contains the configuration for the pre-trained model used for fine-tuning.
+
 
 ## Usage
 1. Run the script to generate event-based Q&A pairs:
