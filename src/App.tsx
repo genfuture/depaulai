@@ -133,14 +133,16 @@ function App() {
   // Clean API response by removing the generic DePaul introduction
   const cleanApiResponse = (response: string): string => {
     // Common introductory phrases to remove
-    const introPatterns = [
-      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded in 1898\.\s*/,
-      
-      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul is the largest Catholic university in the U\.S\. by enrollment\. The university has two campuses located in Lincoln Park and the Loop\. DePaul is classified among "R2: Doctoral Universities – High research activity"\. The acceptance rate is 70%\.\s*/,
+  const introPatterns = [
+  /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded in 1898\.\s*/,
 
-      // New introductory phrase added
-      /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two campuses, one in Lincoln Park and the other in the Loop\. It is the largest Catholic university in the U\.S\. in terms of enrollment\.\s*/
-    ];
+  /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul is the largest Catholic university in the U\.S\. by enrollment\. The university has two campuses located in Lincoln Park and the Loop\. DePaul is classified among "R2: Doctoral Universities – High research activity"\. The acceptance rate is 70%\.\s*/,
+
+  /^DePaul University is a private Catholic research university located in Chicago, Illinois\. It was founded by the Vincentians in 1898 and is named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two campuses, one in Lincoln Park and the other in the Loop\. It is the largest Catholic university in the U\.S\. in terms of enrollment\.\s*/,
+
+  // New introductory phrase added
+  /^DePaul University is a private Catholic research university in Chicago, Illinois\. It was founded in 1898 by the Vincentians and named after the 17th-century French priest Saint Vincent de Paul\. DePaul has two main campuses: one in Lincoln Park and another in the Loop\. The university is the largest Catholic university in North America by enrollment\.\s*/
+  ];
     
     let cleanedResponse = response;
     
