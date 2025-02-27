@@ -4,7 +4,6 @@ A chatbot that can answer questions about DePaul University using data scraped f
 
 ## Features
 
-- Web scraping of DePaul University's website using Scrapy
 - Intelligent content extraction with JavaScript handling
 - Text processing and chunking for optimal LLM input
 - Conversational AI powered by Hugging Face models (Mistral-7B)
