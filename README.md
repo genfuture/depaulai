@@ -30,10 +30,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the web scraper to collect data:
-```bash
-cd scraper
-scrapy crawl depaul
+
 ```
 
 2. Process the scraped data:
