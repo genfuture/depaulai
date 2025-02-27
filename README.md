@@ -18,7 +18,7 @@ This project extracts event data from the DePaul Events iCalendar (.ics) URL, pr
 ## Installation  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/your-repo/event-calendar-parser.git
+   git clone https://github.com/genfuture/depaulai/tree/model-events
    cd event-calendar-parser
 2. Install required dependencies
    ```bash
