@@ -23,14 +23,20 @@ This project extracts event data from the DePaul Events iCalendar (.ics) URL, pr
 2. Install required dependencies
    ```bash
    pip install requests icalendar transformers datasets torch sumy
+   
+## Configuration
+The config.json file stores the trained model configuration, including the model path and hyperparameters for fine-tuning.
 
 ## Usage
-1. Update the iCalendar URL in event_calendar_parser.py:
-   ```python
-   url = "http://events.depaul.edu/calendar/1.ics"
-2. Run the script to generate event-based Q&A pairs:
-
-3. The generated Q&A dataset will be saved as ical_qa_data.json.
+1. Run the script to generate event-based Q&A pairs:
+```bash
+python run.py
+```
+2. Fine tune the model (optional)
+If you want to fine-tune the chatbot model using the generated Q&A data, update config.json with your desired settings and run:
+```bash
+python finetune.py
+```
 
 ## Example output
 Extracted Event:
