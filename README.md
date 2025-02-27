@@ -1,6 +1,9 @@
 # depaulai
 PROpel Hackathon Team
 
+Melissa Vega (mvega30@depaul.edu)
+Frontend before backend implementation
+
 Chatbot frontend built using
 - Next.js
 - TypeScript
