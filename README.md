@@ -1,4 +1,5 @@
 # DePaul University Chatbot
+- Prem Kumar Gadwal (pgadwal@depaul.edu)
 
 A chatbot that can answer questions about DePaul University using data scraped from the university's website.
 
@@ -8,7 +9,7 @@ A chatbot that can answer questions about DePaul University using data scraped f
 - **Optimized for Accuracy**: Achieves high precision in extracting and answering queries.
 - **Self-Hosted**: No external APIs or third-party dependencies.
 - **Frontend Stack**: Built with **React** for a dynamic user interface.
-- **Model**: Utilizes a custom-trained model based on the [DETrained model](https://huggingface.co/prem234/detrained) for enhanced performance.
+- **Model**: trained model [model](https://huggingface.co/prem234/detrained) for enhanced performance.
 
 ## 🛠️ Advanced Techniques Used
 ### Data Preprocessing
