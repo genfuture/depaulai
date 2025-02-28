@@ -1,6 +1,10 @@
 # DePaul University Chatbot
 - Prem Kumar Gadwal (pgadwal@depaul.edu)
 
+#Not all code pushed on here cause we have short time to prepare before deadline before the hackathon.
+
+
+
 A chatbot that can answer questions about DePaul University using data scraped from the university's website.
 
 ## 🚀 Features
