@@ -9,6 +9,10 @@
 
 This repository contains an AI-powered model designed to answer questions based on web pages from DePaul University. The model has been extensively trained using advanced preprocessing, training, and optimization techniques to achieve exceptional accuracy and response quality.
 
+
+**DEMO : https://github.com/user-attachments/assets/f270d7d0-a1e3-4892-b620-9e81b6dd0377**
+
+
 ## 🚀 Tech Stack
 - **Frontend**: React
 - **Backend**: Python
