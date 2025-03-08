@@ -5,7 +5,7 @@
 
 
 
-A chatbot that can answer questions about DePaul University using data scraped from the university's website.
+AI that can answer questions about DePaul University using data scraped from the university's website.
 
 ## 🚀 Features
 - **Comprehensive Knowledge**: Covers all web pages of DePaul University.
